@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
+import 'dart:io';
+import 'dart:async';
 
+import 'package:file_picker/file_picker.dart';
 class SendPage extends StatelessWidget {
   static const routeName = '/sendPage';
+  
+  void _openFileExplorer() async {
+
+  List<File> files = await FilePicker.getMultiFile(type: FileType.any);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +19,8 @@ class SendPage extends StatelessWidget {
           title: Text('Send Files'),
         ),
         body: Center(
-          child: Text('Send Page'),
+          child: FlatButton(onPressed: _openFileExplorer, child: Text('Select Files!')),
+
         ),
       ),
     );
