@@ -1,16 +1,16 @@
-# fileshare
+# FileShare
 
-A new Flutter application.
+A new Flutter application for sharing files between android devices.
 
-## Getting Started
+## Contributors
 
 This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+The project is a collaborative work of a team of 4 people:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+The contributors are:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [Rajnish Singh](https://github.com/rajnis09)
+- [Sanjeev](https://github.com/sanjeev2552)
+- [Ravi Kishor](https://github.com/sadow984)
+- [Yash Khandelwal](https://github.com/Yashyk456)
