@@ -1,6 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
+import './pages/home_page.dart';
+import './pages/send_page.dart';
+import './pages/receive_page.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(
+    SystemUiOverlayStyle(
+      statusBarColor: Colors.blue[800],
+    ),
+  );
   runApp(MyApp());
 }
 
@@ -9,13 +19,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'FileShare',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: Scaffold(
-        body: Center(child: Text('FileShare')),
-      ),
+      home: HomePage(),
+      routes: {
+        SendPage.routeName: (context) => SendPage(),
+        ReceivePage.routeName: (context) => ReceivePage(),
+      },
     );
   }
 }
